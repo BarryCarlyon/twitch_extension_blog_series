@@ -1,0 +1,15 @@
+{
+    "listen": 8050,
+
+    "csp_options": {
+        "enable_rig": false,
+        "report_uri": false,
+        "ebs_domain": false,
+        "content_domains": [
+        ]
+    },
+
+    "twitch": {
+        "client_id": ""
+    }
+}

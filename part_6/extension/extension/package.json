@@ -1,6 +1,6 @@
 {
   "name": "extensionrig",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "An Example of an Express Static server for Twitch Extension Development",
   "main": "server.js",
   "scripts": {
@@ -12,6 +12,7 @@
   "license": "WTFPL",
   "dependencies": {
     "chokidar": "^3.5.2",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "helmet": "^4.6.0"
   }
 }

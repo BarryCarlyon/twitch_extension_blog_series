@@ -1,0 +1,1 @@
+This is where you can write your changelog, so duiring development you can easily refer to what you changed.

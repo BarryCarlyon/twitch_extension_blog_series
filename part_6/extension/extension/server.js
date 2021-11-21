@@ -162,7 +162,7 @@ csp_options.content_domains.forEach(domain => {
 
 const helmet = require('helmet');
 /*
-You can use Security Headers to test your server, if this server is web accessable
+You can use Security Headers to test your server, if this server is web accessible
 https://securityheaders.com/
 It'll test that your CSP is valid.
 Best testing done with an extension, on Twitch or in the rig!

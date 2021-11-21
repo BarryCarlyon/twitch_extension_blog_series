@@ -93,6 +93,7 @@ The rig being an electron app, will call some other things
 As well as having a file:// based parent
 */
 if (csp_options.enable_rig) {
+    console.log('Appending Rig CSP');
     let rig_sources = {
         connectSrc: [
             'wss://pubsub-edge.twitch.tv'
@@ -125,7 +126,8 @@ if (csp_options.report_uri) {
 Did we configure an EBS to call
 */
 if (csp_options.ebs_domain) {
-    let test_only = {
+    console.log('Appending EBS Domain');
+    let ebs_rules = {
         imgSrc: [
             'https://' + csp_options.ebs_domain,
             'wss://' + csp_options.ebs_domain
@@ -140,9 +142,9 @@ if (csp_options.ebs_domain) {
         ]
     }
 
-    for (let sourceType in test_only) {
-        for (let x=0;x<test_only[sourceType].length;x++) {
-            contentSecurityPolicy.directives[sourceType].push(test_only[sourceType][x]);
+    for (let sourceType in ebs_rules) {
+        for (let x=0;x<ebs_rules[sourceType].length;x++) {
+            contentSecurityPolicy.directives[sourceType].push(ebs_rules[sourceType][x]);
         }
     }
 }
@@ -172,6 +174,16 @@ app.use(helmet({
     contentSecurityPolicy
 }));
 
+/*
+This will capture any CSP Report and dump log it to console
+*/
+app.post('/csp/', express.json({
+    type: 'application/csp-report'
+}), (req,res) => {
+    console.log(req.body);
+
+    res.send('Ok');
+});
 
 /*
 Setup a "Log" Event for file loading.

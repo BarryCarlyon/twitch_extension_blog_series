@@ -4,7 +4,7 @@ It's a blog series accompanying code repository
 
 # Read the Blog
 
-You can fidn the Series on my [blog](https://barrycarlyon.co.uk/wordpress/category/twitch/extensions/extensions-series/)
+You can find the Series on my [blog](https://barrycarlyon.co.uk/wordpress/category/twitch/extensions/extensions-series/)
 
 # BUT MOTHER I CRAVE VIOLENCE
 

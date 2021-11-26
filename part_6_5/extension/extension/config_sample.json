@@ -13,9 +13,5 @@
         "connectSrc": [
             "https://api.example.com"
         ]
-    },
-
-    "twitch": {
-        "client_id": "abcdefg123456"
     }
 }

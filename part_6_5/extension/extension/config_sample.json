@@ -1,0 +1,21 @@
+{
+    "listen": 8050,
+
+    "csp_options": {
+        "clientID": "abcdefg123456",
+        "enableRig": true,
+        "imgSrc": [
+            "https://images.example.com"
+        ],
+        "mediaSrc": [
+            "https://videos.example.com"
+        ],
+        "connectSrc": [
+            "https://api.example.com"
+        ]
+    },
+
+    "twitch": {
+        "client_id": "abcdefg123456"
+    }
+}

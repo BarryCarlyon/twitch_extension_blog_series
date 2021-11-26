@@ -1,0 +1,17 @@
+{
+  "name": "extensionrig",
+  "version": "1.0.6",
+  "description": "An Example of an Express Static server for Twitch Extension Development",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Barry Carlyon",
+  "license": "WTFPL",
+  "dependencies": {
+    "express": "^4.17.1",
+    "twitchextensioncsp": "^1.0.1"
+  }
+}

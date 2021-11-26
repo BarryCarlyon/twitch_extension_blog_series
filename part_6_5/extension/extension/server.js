@@ -20,7 +20,7 @@ app.listen(listen, function () {
 })
 
 const twitchextensioncsp = require('twitchextensioncsp');
-app.use(twitchextensioncsp(csp_options);
+app.use(twitchextensioncsp(csp_options));
 
 /*
 Setup a "Log" Event for file loading.
